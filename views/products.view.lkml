@@ -17,6 +17,15 @@ view: products {
   # A dimension is a groupable field that can be used to filter query results.
   # This dimension will be called "Brand" in Explore.
 
+  dimension: brand2 {
+    type: string
+    sql: ${TABLE}.brand ;;
+
+    link:{
+      url: "http://www.google.com/search?q={{ value }}"
+      icon_url: "https://www.google.com/s2/favicons?domain=www.nps.gov"
+    }}
+
   dimension: brand {
     type: string
     sql: ${TABLE}.brand ;;
