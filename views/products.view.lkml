@@ -21,10 +21,10 @@ view: products {
     type: string
     sql: ${TABLE}.brand ;;
 
-    link:{
-      url: "http://www.google.com/search?q={{ value }}"
-      icon_url: "https://www.google.com/s2/favicons?domain=www.nps.gov"
-    }}
+
+     # html:  <a href="/dashboards/dashboardnumber?NameFilter={{ value }}&Filter2=filter_value">{{ value }}</a> ;;
+html:<a href="https://www.google.com/search?={{value}}"</a> ;;
+}
 
   dimension: brand {
     type: string
