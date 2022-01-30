@@ -23,8 +23,9 @@ view: products {
 
 
      # html:  <a href="/dashboards/dashboardnumber?NameFilter={{ value }}&Filter2=filter_value">{{ value }}</a> ;;
-html:<a href="https://www.google.com/search?={{value}}"</a> ;;
-}
+link:{
+  url:"https://www.google.com/search?={{ value  }}"
+}}
 
   dimension: brand {
     type: string
